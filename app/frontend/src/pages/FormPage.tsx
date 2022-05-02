@@ -1,5 +1,7 @@
 import React from 'react';
+import { changeButtonColor } from '../services/changeButtonColor';
 import { textAreaCounter } from '../services/counter';
+import '../styles/input.css';
 
 const Page = () => {
 	return (
@@ -9,14 +11,14 @@ const Page = () => {
 
 				<p data-testid="question-one"> 1) Você se considera bom em lógica? </p>
 				<div data-testid="first-response">
-					<input type="button" value="Sim" className="R1"/>
-					<input type="button" value="Não" className="R1"/>
+					<input type="button" value="Sim" className="R1" onClick={(e) => changeButtonColor(e)}/>
+					<input type="button" value="Não" className="R1" onClick={(e) => changeButtonColor(e)}/>
 				</div>
 
 				<p data-testid="question-two"> 2) Gosta de aprender com desafios? </p>
 				<div data-testid="second-response">
-					<input type="button" value="Sim" className="R2"/>
-					<input type="button" value="Não" className="R2"/>
+					<input type="button" value="Sim" className="R2" onClick={(e) => changeButtonColor(e)}/>
+					<input type="button" value="Não" className="R2" onClick={(e) => changeButtonColor(e)}/>
 				</div>
 
 				<p data-testid="question-three"> 3) Gostaria de fazer parte da GRX? </p>
