@@ -1,4 +1,5 @@
 import express from 'express';
+import DataController from './controllers/DataController';
 class App {
 	public app: express.Application;
 
@@ -16,7 +17,10 @@ class App {
 		};
 
 		this.app.use(accessControl);
+
+		this.app.post('/data', DataController.create);
 	}
+
 
 	public startServer(PORT: string | number): void {
 		this.app.listen(PORT, () => console.log(`Aplicação rodando na porta ${PORT}`));
