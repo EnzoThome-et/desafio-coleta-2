@@ -1,3 +1,4 @@
 import App from './app';
 
-new App().startServer();
+const PORT = process.env.PORT || 3001;
+new App().startServer(PORT);

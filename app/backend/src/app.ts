@@ -1,19 +1,25 @@
 import express from 'express';
-
 class App {
-	public app: express.Express;
+	public app: express.Application;
 
 	constructor() {
 		this.app = express();
 		this.app.use(express.json());
 	}
 
-	public startServer(port = 3001) {
-		const actualPort = process.env.PORT || port;
-		this.app.listen(
-			actualPort,
-			() => console.log(`Aplicação rodando na porta ${actualPort}`)
-		);
+	private config():void {
+		const accessControl: express.RequestHandler = (_req, res, next) => {
+			res.header('Access-Control-Allow-Origin', '*');
+			res.header('Access-Control-Allow-Methods', 'GET,POST,DELETE,OPTIONS,PUT, PATCH');
+			res.header('Access-Control-Allow-Headers', '*');
+			next();
+		};
+
+		this.app.use(accessControl);
+	}
+
+	public startServer(PORT: string | number): void {
+		this.app.listen(PORT, () => console.log(`Aplicação rodando na porta ${PORT}`));
 	}
 }
 
