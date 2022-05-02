@@ -3,6 +3,7 @@ import { changeButtonColor } from '../services/changeButtonColor';
 import { textAreaCounter } from '../services/counter';
 import { useForm } from 'react-hook-form';
 import '../styles/input.css';
+import '../styles/button.css';
 
 const Page = () => {
 	const { register, handleSubmit } = useForm();
@@ -12,16 +13,22 @@ const Page = () => {
 			<form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
 				<h2> Desafio Coleta - GRX </h2>
 
-				<p data-testid="question-one"> 1) Você se considera bom em lógica? </p>
-				<div data-testid="first-response">
-					<input type="button" value="Sim" {...register('Pergunta1')} className="R1" onClick={(e) => changeButtonColor(e)}/>
-					<input type="button" value="Não" {...register('Pergunta1')} className="R1" onClick={(e) => changeButtonColor(e)}/>
+				<div className="button">
+					<input type="radio" id="SR1" value="Sim" {...register('Pergunta1')} />
+					<label htmlFor="SR1">Sim</label>
+				</div>
+				<div className="button">
+					<input type="radio" id="NR1" value="Não" {...register('Pergunta1')} />
+					<label htmlFor="NR1">Não</label>
 				</div>
 
-				<p data-testid="question-two"> 2) Gosta de aprender com desafios? </p>
-				<div data-testid="second-response">
-					<input type="button" {...register('Pergunta2')} value="Sim" className="R2" onClick={(e) => changeButtonColor(e)}/>
-					<input type="button" {...register('Pergunta2')} value="Não" className="R2" onClick={(e) => changeButtonColor(e)}/>
+				<div className="button">
+					<input type="radio" id="SR2" value="Não" {...register('Pergunta2')} />
+					<label htmlFor="SR2">Sim</label>
+				</div>
+				<div className="button">
+					<input type="radio" id="NR2" value="Não" {...register('Pergunta2')} />
+					<label htmlFor="NR2">Não</label>
 				</div>
 
 				<p data-testid="question-three"> 3) Gostaria de fazer parte da GRX? </p>
