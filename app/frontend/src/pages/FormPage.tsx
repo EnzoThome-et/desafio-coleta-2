@@ -33,6 +33,7 @@ const Page = () => {
 
 				<p data-testid="question-three"> 3) Gostaria de fazer parte da GRX? </p>
 				<select {...register('Pergunta3')}>
+					<option value="">Selecione...</option>
 					<option value="Sim">Sim</option>
 					<option value="Não">Não</option>
 					<option value="Não Sei">Não Sei</option>
