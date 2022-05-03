@@ -1,11 +1,11 @@
 import express from 'express';
 import DataController from './controllers/DataController';
 class App {
-	public app: express.Application;
+	public app: express.Express;
 
 	constructor() {
 		this.app = express();
-		this.app.use(express.json());
+		this.config();
 	}
 
 	private config():void {
@@ -17,6 +17,7 @@ class App {
 		};
 
 		this.app.use(accessControl);
+		this.app.use(express.json());
 
 		this.app.post('/data', DataController.create);
 	}
