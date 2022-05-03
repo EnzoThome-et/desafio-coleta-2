@@ -1,7 +1,15 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import FormPage from './pages/FormPage';
 
 function App() {
-	return (<p>Hello World</p>);
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route  path="/" element={<FormPage/>}/>
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;
