@@ -11,6 +11,10 @@ interface DataQuestions extends IQuestions {
 	QuantidadeNaoAvaliada: number,
 }
 
-export {DataQuestions};
+interface DBQuestions extends DataQuestions {
+    _id: string
+}
+
+export {DataQuestions, DBQuestions};
 
 export default IQuestions;
