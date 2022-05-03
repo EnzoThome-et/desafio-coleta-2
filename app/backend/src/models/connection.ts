@@ -1,9 +1,8 @@
-import {createPool} from 'mysql2';
+import mongoose from 'mongoose';
 
-const connection = createPool({
-	host: process.env.MYSQL_HOST,
-	user: process.env.MYSQL_USER,
-	password: process.env.MYSQL_PASSWORD,
-});
+const connection = (
+	mongoDatabaseURI = process.env.MONGO_URI
+	|| 'mongodb://localhost:27017/Data'
+) => mongoose.connect(mongoDatabaseURI);
 
 export default connection;
