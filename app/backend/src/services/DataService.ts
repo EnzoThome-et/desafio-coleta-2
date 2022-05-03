@@ -1,8 +1,10 @@
 import Questions from '../models/Questions';
 import IQuestions from '../interfaces/Questions';
+import bodyFormater from '../middlewares/bodyFormater';
 class DataService {
 	static create = async (obj: IQuestions) => {
-		const newQuestions = new Questions(obj);
+		const newData = bodyFormater(obj);
+		const newQuestions = new Questions(newData);
 		await newQuestions.save();
 		return newQuestions;
 	};
