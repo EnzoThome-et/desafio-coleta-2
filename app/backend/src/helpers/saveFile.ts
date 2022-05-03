@@ -1,5 +1,5 @@
 import { writeFileSync,readFileSync } from 'fs';
-import { DataQuestion } from '../interfaces/Questions';
+import { DataQuestions } from '../interfaces/Questions';
 
 const loadFile = () => {
 	try { 
@@ -13,7 +13,7 @@ const loadFile = () => {
 	}
 };
 
-const saveFile = (data: DataQuestion) => {
+const saveFile = (data: DataQuestions) => {
 	try {
 		const file = loadFile();
         

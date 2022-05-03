@@ -5,4 +5,12 @@ interface IQuestions {
     'Pergunta4': string,
 }
 
+interface DataQuestion extends IQuestions {
+    QuantidadePositiva: number,
+	QuantidadeNegativa: number,
+	QuantidadeNaoAvaliada: number,
+}
+
+export {DataQuestion};
+
 export default IQuestions;
