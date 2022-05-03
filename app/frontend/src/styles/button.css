@@ -22,8 +22,9 @@
   }
   
   .button input[type="radio"]:checked + label {
-    background: #20b8be;
+    background: DodgerBlue;
     border-radius: 4px;
+    border: 1px solid black;
   }
   
   .button label {
@@ -32,3 +33,13 @@
     line-height: 1.8em;
   }
   
+  .submit {
+    background: DodgerBlue;
+    border: none;
+    height: 30px;
+    width: 250px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 55px;
+    margin-bottom: 15px;
+  }
