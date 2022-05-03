@@ -1,4 +1,5 @@
 import {Request, Response} from 'express';
+import ResultService from '../services/ResultService';
 
 
 export default class ResultController {
