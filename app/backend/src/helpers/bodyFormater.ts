@@ -11,7 +11,7 @@ const bodyFormater = (questions: IQuestions) => {
 	array.forEach((question) => {
 		if(question === 'Não') QuantidadeNegativa += 1;
 		if(question === 'Não Sei') QuantidadeNaoAvaliada += 1;
-		else { QuantidadePositiva += 1;}
+		if(question === 'Sim' || question === 'Agora!!') QuantidadePositiva += 1;
 	});
 
 	const transformedObject = {
