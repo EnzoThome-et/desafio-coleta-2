@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { textAreaCounter } from '../services/counter';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
 import '../styles/form.css';
 import '../styles/button.css';
 
@@ -9,7 +10,15 @@ const Page = () => {
 	const [data, setData] = useState('');
 	return (
 		<main className="formContainer">
-			<form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
+			<form onSubmit={handleSubmit((data) => {
+				setData(JSON.stringify(data));
+				axios({
+					method: 'post',
+					url: 'http://localhost:3001/data',
+					data
+				});
+			}
+			)}>
 				<h2> Desafio Coleta - GRX </h2>
 
 				<p>1) Você se considera bom em lógica? </p>
