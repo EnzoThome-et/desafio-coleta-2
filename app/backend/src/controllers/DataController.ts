@@ -1,5 +1,5 @@
 import {Request, Response} from 'express';
-
+import DataService from '../services/DataService';
 export default class DataController {
 	static async create(req: Request, res: Response) {
 		try {
