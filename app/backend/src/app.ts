@@ -20,6 +20,7 @@ class App {
 		this.app.use(express.json());
 
 		this.app.post('/data', DataController.create);
+		this.app.get('/data', DataController.getAll);
 	}
 
 
