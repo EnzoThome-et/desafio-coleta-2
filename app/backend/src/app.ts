@@ -1,5 +1,6 @@
 import express from 'express';
 import DataController from './controllers/DataController';
+import ResultController from './controllers/ResultsController';
 class App {
 	public app: express.Express;
 
@@ -21,6 +22,7 @@ class App {
 
 		this.app.post('/data', DataController.create);
 		this.app.get('/data', DataController.getAll);
+		this.app.get('/results', ResultController.getAll);
 	}
 
 
