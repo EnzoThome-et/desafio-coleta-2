@@ -21,7 +21,7 @@ const Page = () => {
 				setResult(result.data);				
 			}
 			)}>
-				<h2> Desafio Coleta - GRX </h2>
+				<h1> Desafio Coleta - GRX </h1>
 
 				<p className="p1">1) Você se considera bom em lógica? </p>
 				<div className="firstQuestionContainer">

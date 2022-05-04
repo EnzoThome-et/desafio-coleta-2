@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ResultPage.css';
+import '../styles/Result.css';
 import { IResult } from '../interfaces/resultInterface';
 
 const ResultPage = (props: {result: IResult}) => {
@@ -30,18 +30,18 @@ const ResultPage = (props: {result: IResult}) => {
 		<div className="resultContainer">
 			<div className="titleContainer">
 				<p>Total</p>
-				<p>{total}</p>
+				<p className="total">{total}</p>
 			</div>
 			{transformedObjs.sort((a, b) => b.quantity - a.quantity).map(({name, quantity, percentText, percentValue}, index) => {
 				return (
 					<div key={index} className="quantityContainer">
 						<div className="quantity">
 							<p>{name}</p>
-							<p>{quantity}</p>
+							<p className="number">{quantity}</p>
 						</div>
 						<div className="percent">
 							<p>{percentText}</p>
-							<p>{percentValue}</p>
+							<p className="number">{percentValue}</p>
 						</div>
 					</div>
 				);
