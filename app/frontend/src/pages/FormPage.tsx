@@ -4,19 +4,21 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import '../styles/form.css';
 import '../styles/button.css';
+import ResultPage from '../components/Result';
 
 const Page = () => {
 	const { register, formState: { errors }, handleSubmit } = useForm();
-	const [data, setData] = useState('');
+	const [result, setResult] = useState('');
 	return (
 		<main className="formContainer">
-			<form onSubmit={handleSubmit((data) => {
-				setData(JSON.stringify(data));
-				axios({
+			<form onSubmit={handleSubmit(async (data) => {
+				await axios({
 					method: 'post',
 					url: 'http://localhost:3001/data',
 					data
 				});
+				const result = await axios.get('http://localhost:3001/results');
+				setResult(result.data);				
 			}
 			)}>
 				<h2> Desafio Coleta - GRX </h2>
@@ -63,7 +65,7 @@ const Page = () => {
 				{errors.Pergunta4?.type === 'required' && 'Justifique sua resposta!'}
 
 				<button type="submit" className="submit">Enviar</button>
-				<p>{data}</p>
+				{typeof(result) !== 'string' && <ResultPage result={result}/>}
 			</form>
 			
 		</main>
