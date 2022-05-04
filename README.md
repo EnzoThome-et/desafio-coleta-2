@@ -54,14 +54,15 @@ O maior desafio desse projeto ocorreu durante a manipulação de dados. Tanto no
 <details>
   <summary> Possível erro no documento</summary>
   
-  Regras de negócio:
+  <p>Regras de negócio:</p>
   <img src="https://user-images.githubusercontent.com/85764731/166719666-b632f201-9d9b-446f-825f-084e7d6696d3.png" width="800" />
-  Na seção das regras de validação, está explícito que não é preciso nenhuma regra, apenas armazenar o valor da pergunta. 
+  <p>Na seção das regras de validação, está explícito que não é preciso nenhuma regra, apenas armazenar o valor da pergunta.</p>
   
-  Exemplo de JSON:
+  <p>Exemplo de JSON:</p>
   <img src="https://user-images.githubusercontent.com/85764731/166720077-908f77f8-bca1-43e8-97cf-34d9f895780d.png" width="800" />
   
-  No exemplo da imagem, as três primeiras perguntas são afirmativas, logo, a chave "QuantidadePositiva" deveria ter o valor "3" e não "4".
+  
+  <p>No exemplo da imagem, as três primeiras perguntas são afirmativas, logo, a chave "QuantidadePositiva" deveria ter o valor "3" e não "4".</p>
   
  
 
