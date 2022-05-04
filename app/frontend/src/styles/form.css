@@ -46,6 +46,7 @@ form {
 }
 
 select {
+    cursor: pointer;
     border: 6px solid transparent;
     width: 300px;
     height: 40px;
