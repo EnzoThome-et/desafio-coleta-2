@@ -29,6 +29,7 @@
   
   .button label {
     background-color: rgb(195,192,187);
+    padding-top: 5px;
     border-radius: 4px;
     cursor: pointer;
     z-index: 90;
