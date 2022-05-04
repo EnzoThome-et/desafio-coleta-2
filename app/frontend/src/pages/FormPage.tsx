@@ -61,7 +61,7 @@ const Page = () => {
 
 				<p data-testid="question-four" className="question-four"> 4) Por favor, justifique a resposta anterior </p>
 				<textarea {...register('Pergunta4', {required: true})} className="textarea" id="fourth-response" minLength={15} maxLength={200} onChange={() => { textAreaCounter();}}/>
-				<p className="counter">200</p>
+				<p className="counter">0/200</p>
 				{errors.Pergunta4?.type === 'required' && <span>Justifique sua resposta!</span>}
 
 				<button type="submit" className="submit">Enviar</button>
