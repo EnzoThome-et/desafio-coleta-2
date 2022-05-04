@@ -6,14 +6,14 @@ const QuestionTwo = (props: Register) => {
 	const {register, errors} = props;
 	return(
 		<>
-			<p className="p2">2) Gosta de aprender com desafios? </p>
+			<p className="p2" data-testid="question-two">2) Gosta de aprender com desafios? </p>
 			<div className="secondQuestionContainer">
 				<div className="button">
-					<input type="radio" id="SR2" value="Sim" {...register('Pergunta2', {required: true})} />
+					<input type="radio" data-testid="SR2" value="Sim" {...register('Pergunta2', {required: true})} />
 					<label htmlFor="SR2">Sim</label>
 				</div>
 				<div className="button">
-					<input type="radio" id="NR2" value="Não" {...register('Pergunta2', {required: true})} />
+					<input type="radio" data-testid="NR2" value="Não" {...register('Pergunta2', {required: true})} />
 					<label htmlFor="NR2">Não</label>
 				</div>
 			</div>

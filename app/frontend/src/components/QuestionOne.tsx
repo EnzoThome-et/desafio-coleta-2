@@ -6,14 +6,14 @@ const QuestionOne = (props: Register) => {
 	const {register, errors} = props;
 	return(
 		<>
-			<p className="p1">1) Você se considera bom em lógica? </p>
+			<p className="p1" data-testid="question-one">1) Você se considera bom em lógica? </p>
 			<div className="firstQuestionContainer">
 				<div className="button">
-					<input type="radio" id="SR1" value="Sim" {...register('Pergunta1', {required: true})}/>
+					<input type="radio" data-testid="SR1" value="Sim" {...register('Pergunta1', {required: true})}/>
 					<label htmlFor="SR1">Sim</label>
 				</div>
 				<div className="button">
-					<input type="radio" id="NR1" value="Não" {...register('Pergunta1', {required: true})} />
+					<input type="radio" data-testid="NR1" value="Não" {...register('Pergunta1', {required: true})} />
 					<label htmlFor="NR1">Não</label>
 				</div>
 			</div>
