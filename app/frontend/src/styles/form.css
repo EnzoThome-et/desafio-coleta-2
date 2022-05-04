@@ -54,9 +54,11 @@ select {
 }
 
 textarea {
+    border: 1px solid rgb(195,192,187);
+    padding: 5px;
     resize: none;
     height: 80px;
-    width: 300px;
+    width: 295px;
     margin-left: 65px;
 }
 
