@@ -15,13 +15,7 @@
 Esse projeto se trata de uma aplicação FullStack, com o objetivo de manipular os dados preenchidos em um formulário.
 
 <h2 id="desafios">:anger: Desafios </h2> 
-O projeto como um todo trouxe bastante desafios, mas os principais deles foram:
-<br/>
-    <ul> 
-      <li> Colocar em prática o TDD </li>
-      <li> Aprender a usar ferramentas como o Axios e o React Hook Form</li>
-      <li> Exercitar a lógica de programação para manipulação de dados</li>
-    </ul>
+O maior desafio desse projeto ocorreu durante a manipulação de dados. Tanto no frontend quanto no backend, tive que tomar decisões em relação ao formato dos objetos, levando em conta como que eles seriam utilizados em outros pontos do código.
 
 <h2 id="tecnologias"> 🛠 Tecnologias </h2>
 
@@ -29,7 +23,7 @@ O projeto como um todo trouxe bastante desafios, mas os principais deles foram:
   <summary> Gerais </summary>
     <ul> 
       <li><a href="https://eslint.org/"> ESLint </a></li>
-      <li><a href="https://www.docker.com/"> Docker </a></li>
+<!--       <li><a href="https://www.docker.com/"> Docker </a></li> -->
       <li><a href="https://www.typescriptlang.org/"> TypeScript </a></li>
     </ul>
 </details>
@@ -55,4 +49,21 @@ O projeto como um todo trouxe bastante desafios, mas os principais deles foram:
 </details>
 
 <h2 id="feedback"> :black_nib: Feedback</h2>
+<p> Esse foi um desafio que envolveu bastante aprendizado. Pude revisitar alguns conceitos que estavam meio "enferrujados" e também usar novas ferramentas. Apesar de não ter requerido uma alta complexidade, é um projeto que ainda tem o seu caráter desafiador. Achei o prazo suficiente para cumprir com todos os requisitos.</p>
+
+<details>
+  <summary> Possível erro no documento</summary>
+  
+  Regras de negócio:
+  <img src="https://user-images.githubusercontent.com/85764731/166719666-b632f201-9d9b-446f-825f-084e7d6696d3.png" width="800" />
+  Na seção das regras de validação, está explícito que não é preciso nenhuma regra, apenas armazenar o valor da pergunta. 
+  
+  Exemplo de JSON:
+  <img src="https://user-images.githubusercontent.com/85764731/166720077-908f77f8-bca1-43e8-97cf-34d9f895780d.png" width="800" />
+  
+  No exemplo da imagem, as três primeiras perguntas são afirmativas, logo, a chave "QuantidadePositiva" deveria ter o valor "3" e não "4".
+  
+ 
+
+</details>
 
