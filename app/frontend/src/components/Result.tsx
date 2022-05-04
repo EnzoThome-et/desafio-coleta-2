@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Result.css';
 import { IResult } from '../interfaces/resultInterface';
 
-const ResultPage = (props: {result: IResult}) => {
+const Result = (props: {result: IResult}) => {
 	const {positiva,negativa,naoAvaliada,total} = props.result;
 
 	const transformedObjs = [
@@ -50,4 +50,4 @@ const ResultPage = (props: {result: IResult}) => {
 	);
 };
 
-export default ResultPage;
+export default Result;
