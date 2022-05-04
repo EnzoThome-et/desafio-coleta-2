@@ -22,6 +22,7 @@ const Page = () => {
 			}
 			)}>
 				<h1> Desafio Coleta - GRX </h1>
+				
 				<QuestionOne register={register} errors={errors}/>
 				<QuestionTwo register={register} errors={errors}/>
 				<QuestionThree register={register} errors={errors}/>
