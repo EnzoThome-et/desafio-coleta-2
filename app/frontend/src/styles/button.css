@@ -28,15 +28,19 @@
   }
   
   .button label {
-    border: 1px solid black;
+    background-color: rgb(195,192,187);
     border-radius: 4px;
     cursor: pointer;
     z-index: 90;
     line-height: 1.8em;
   }
+
+  .button label:hover, .submit:hover {
+    background: DodgerBlue;
+  }
   
   .submit {
-    background: DodgerBlue;
+    background: rgb(195,192,187);
     border: none;
     height: 30px;
     width: 300px;

@@ -34,7 +34,7 @@ const Page = () => {
 						<label htmlFor="NR1">Não</label>
 					</div>
 				</div>
-				{errors.Pergunta1?.type === 'required' && 'Resposta obrigatória'}
+				{errors.Pergunta1?.type === 'required' && <span>Resposta obrigatória!</span>}
 				
 				<p className="p2">2) Gosta de aprender com desafios? </p>
 				<div className="secondQuestionContainer">
@@ -47,7 +47,7 @@ const Page = () => {
 						<label htmlFor="NR2">Não</label>
 					</div>
 				</div>
-				{errors.Pergunta2?.type === 'required' && 'Resposta obrigatória'}
+				{errors.Pergunta2?.type === 'required' && <span>Resposta obrigatória!</span>}
 				
 				<p data-testid="question-three"> 3) Gostaria de fazer parte da GRX? </p>
 				<select {...register('Pergunta3', { required: true })}>
@@ -57,12 +57,12 @@ const Page = () => {
 					<option value="Não Sei">Não Sei</option>
 					<option value="Agora !!">Agora !!</option>
 				</select>
-				{errors.Pergunta3?.type === 'required' && 'Selecione uma opção'}
+				{errors.Pergunta3?.type === 'required' && <span>Selecione uma opção!</span>}
 
 				<p data-testid="question-four" className="question-four"> 4) Por favor, justifique a resposta anterior </p>
 				<textarea {...register('Pergunta4', {required: true})} className="textarea" id="fourth-response" minLength={15} maxLength={200} onChange={() => { textAreaCounter();}}/>
 				<p className="counter">200</p>
-				{errors.Pergunta4?.type === 'required' && 'Justifique sua resposta!'}
+				{errors.Pergunta4?.type === 'required' && <span>Justifique sua resposta!</span>}
 
 				<button type="submit" className="submit">Enviar</button>
 				{typeof(result) !== 'string' && <ResultPage result={result}/>}

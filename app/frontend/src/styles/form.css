@@ -50,7 +50,7 @@ select {
     margin-top: 20px;
     margin-left: 65px;
     margin-bottom: 30px;
-    background-color: DodgerBlue;
+    background-color: rgb(195,192,187);
 }
 
 textarea {
@@ -66,5 +66,12 @@ margin-left: 340px;
 
 h1 {
     margin-bottom: 30px;
+    margin-left: 50px;
     text-align: center;
+}
+
+span {
+    color: red;
+    margin-right: 95px;
+    margin-bottom: 15px;
 }
