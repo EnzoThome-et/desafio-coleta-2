@@ -1,0 +1,31 @@
+version: '3.9'
+services:
+  react-app:
+    image: react-app
+    ports:
+      - 3000:3000
+    stdin_open: true
+    networks:
+      - mern-app
+  api-server: 
+    image: api-server
+    ports:
+      - 3001:3001
+    depends_on:
+      - mongo
+    networks:
+      - mern-app  
+  mongo:
+    image: mongo
+    ports:
+    - 27018:27017
+    networks:
+      - mern-app
+    volumes:
+      - mongo-data:/data/db  
+networks:
+  mern-app:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local    
