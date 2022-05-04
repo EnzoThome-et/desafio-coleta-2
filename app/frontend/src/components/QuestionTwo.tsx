@@ -26,4 +26,4 @@ QuestionTwo.propTypes = {
 	register: PropTypes.func.isRequired
 };
 
-export default QuestionTwo;
+export {QuestionTwo};
