@@ -7,6 +7,6 @@ export const textAreaCounter = () => {
 	const result = (maxLength - textAreaValue).toString();
 	counter.innerHTML = `${textArea?.value.length}/${result}`;
 	if(textAreaValue < 15 || textAreaValue > 200) counter.style.color = 'red';
-	if(textAreaValue > 15 && textAreaValue < 200) counter.style.color = 'black';
+	if(textAreaValue >= 15 && textAreaValue <= 200) counter.style.color = 'black';
 	
 };
