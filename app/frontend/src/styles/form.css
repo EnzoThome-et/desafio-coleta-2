@@ -82,6 +82,14 @@ h1 {
 
 span {
     color: red;
-    margin-right: 95px;
     margin-bottom: 15px;
+    margin-right: 90px;
+}
+
+.err2 {
+    margin-right: 45px;
+}
+
+.err3{
+    margin-right: 3px;
 }

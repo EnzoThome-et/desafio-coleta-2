@@ -60,9 +60,11 @@ const Page = () => {
 				{errors.Pergunta3?.type === 'required' && <span>Selecione uma opção!</span>}
 
 				<p data-testid="question-four" className="question-four"> 4) Por favor, justifique a resposta anterior </p>
-				<textarea {...register('Pergunta4', {required: true})} className="textarea" id="fourth-response" minLength={15} maxLength={200} onChange={() => { textAreaCounter();}}/>
+				<textarea {...register('Pergunta4', {required: true, maxLength: 200, minLength: 15})} className="textarea" id="fourth-response" onChange={() => { textAreaCounter();}}/>
 				<p className="counter">0/200</p>
 				{errors.Pergunta4?.type === 'required' && <span>Justifique sua resposta!</span>}
+				{errors.Pergunta4?.type === 'maxLength' && <span className="err2">Limite de caracteres atingido!</span>}
+				{errors.Pergunta4?.type === 'minLength' && <span className="err3">Atinja o limite mínimo de caracteres!</span>}
 
 				<button type="submit" className="submit">Enviar</button>
 				{typeof(result) !== 'string' && <ResultPage result={result}/>}
