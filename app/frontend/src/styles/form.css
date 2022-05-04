@@ -5,7 +5,12 @@
 
 body {
     text-align: center;
+}
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 form {
@@ -17,30 +22,33 @@ form {
 }
 
 .firstQuestionContainer {
-     margin-left: 10px;
-     margin-bottom: 15px;
-     margin-top: 15px;
-     padding-bottom: 10px;
+    width: 400px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    margin-left: 175px;
 } 
 
 .secondQuestionContainer {
+    width: 400px;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 10px;
     padding-bottom: 10px;
+    margin-left: 175px;
 } 
 
 
 .question-four {
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 43px;
+    margin-left: 40px;
+    width: 270px;
 }
 
 select {
-    width: 250px;
+    width: 300px;
     margin-top: 20px;
-    margin-left: 43px;
+    margin-left: 65px;
     margin-bottom: 30px;
     background-color: DodgerBlue;
 }
@@ -48,12 +56,12 @@ select {
 textarea {
     resize: none;
     height: 80px;
-    width: 250px;
-    margin-left: 43px;
+    width: 300px;
+    margin-left: 65px;
 }
 
 .counter {
-margin-left: 270px;
+margin-left: 340px;
 }
 
 h2 {

@@ -27,7 +27,7 @@ const ResultPage = (props: {result: IResult}) => {
 	];
 	
 	return (
-		<section>
+		<div className="resultContainer">
 			<div className="titleContainer">
 				<p>Total</p>
 				<p>{total}</p>
@@ -46,7 +46,7 @@ const ResultPage = (props: {result: IResult}) => {
 					</div>
 				);
 			})}
-		</section>
+		</div>
 	);
 };
 

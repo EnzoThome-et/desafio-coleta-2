@@ -23,7 +23,7 @@ const Page = () => {
 			)}>
 				<h2> Desafio Coleta - GRX </h2>
 
-				<p>1) Você se considera bom em lógica? </p>
+				<p className="p1">1) Você se considera bom em lógica? </p>
 				<div className="firstQuestionContainer">
 					<div className="button">
 						<input type="radio" id="SR1" value="Sim" {...register('Pergunta1', {required: true})} />
@@ -36,7 +36,7 @@ const Page = () => {
 				</div>
 				{errors.Pergunta1?.type === 'required' && 'Resposta obrigatória'}
 				
-				<p>2) Gosta de aprender com desafios? </p>
+				<p className="p2">2) Gosta de aprender com desafios? </p>
 				<div className="secondQuestionContainer">
 					<div className="button">
 						<input type="radio" id="SR2" value="Sim" {...register('Pergunta2', {required: true})} />
