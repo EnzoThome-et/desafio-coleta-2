@@ -20,7 +20,7 @@ O projeto como um todo trouxe bastante desafios, mas os principais deles foram:
     <ul> 
       <li> Colocar em prática o TDD </li>
       <li> Aprender a usar ferramentas como o Axios e o React Hook Form</li>
-      <li> Exercitar a lógica de programação em alguns requisitos do projeto</li>
+      <li> Exercitar a lógica de programação para manipular os dados</li>
     </ul>
 
 <h2 id="tecnologias"> 🛠 Tecnologias </h2>
