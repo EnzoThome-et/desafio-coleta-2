@@ -1,10 +1,12 @@
 FROM node:16-alpine
 
-WORKDIR /backend
+WORKDIR /usr/src/app
 
 COPY package.json .
 
 RUN npm install
+
+RUN npm install -g ts-node
 
 COPY . . 
 
