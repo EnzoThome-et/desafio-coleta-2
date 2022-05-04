@@ -45,20 +45,18 @@ describe('Elements of page', () => {
 describe('Questions of form', () => {
 	it('the first question has two buttons', () => {
 		const { getByTestId } = render(<FormPage/>);
-		const firstQuestion = getByTestId('first-response');
-		const yesButton = firstQuestion.firstChild;
-		const noButton = yesButton.nextSibling;
-		expect(yesButton).toHaveValue('Sim');
-		expect(noButton).toHaveValue('Não');
+		const yesButton = getByTestId('SR1');
+		const noButton = getByTestId('NR1');
+		expect(yesButton).toBeInTheDocument();
+		expect(noButton).toBeInTheDocument();
 	});
 
 	it('the second question has two buttons', () => {
 		const { getByTestId } = render(<FormPage/>);
-		const secondQuestion = getByTestId('second-response');
-		const yesButton = secondQuestion.firstChild;
-		const noButton = yesButton.nextSibling;
-		expect(yesButton).toHaveValue('Sim');
-		expect(noButton).toHaveValue('Não');
+		const yesButton = getByTestId('SR2');
+		const noButton = getByTestId('NR2');
+		expect(yesButton).toBeInTheDocument();
+		expect(noButton).toBeInTheDocument();
 	});
 
 	it('the third question has a select tag', () => {
