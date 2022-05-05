@@ -4,26 +4,27 @@
 </p>
 <h1 align="center"> Desafio Coleta - GRX</h1>
 
-<h2> :bookmark_tabs: Tabela de conteúdos </h2>
+<h2> Tabela de conteúdos :bookmark_tabs:  </h2>
 
    * [Sobre](#sobre)
    * [Desafios](#desafios)
    * [Tecnologias](#tecnologias)
+   * [Melhorias](#melhorias)
    * [Feedback](#feedback)
 
-<h2 id="sobre">:speech_balloon: Sobre </h2>
-Esse projeto se trata de uma aplicação FullStack, com o objetivo de manipular os dados preenchidos em um formulário.
+<h2 id="sobre"> Sobre :speech_balloon: </h2>
+Esse é um projeto FullStack, com o objetivo de manipular os dados preenchidos em um formulário. Se trata de uma aplicação MERN, ou seja, uma aplicação que utiliza as seguintes stacks: MongoDB, Express, React e NodeJS.
 
-<h2 id="desafios">:anger: Desafios </h2> 
-O maior desafio desse projeto ocorreu durante a manipulação de dados. Tanto no frontend quanto no backend, tive que tomar decisões em relação ao formato dos objetos, levando em conta como que eles seriam utilizados em outros pontos do código.
+<h2 id="desafios"> Desafios :anger: </h2> 
+O maior desafio desse projeto ocorreu durante a manipulação de dados. Tanto no frontend quanto no backend, tive que tomar decisões em relação ao formato dos objetos, levando em conta como que eles seriam utilizados em outros pontos do código. Nessa parte em específico, exercitei bastante a lógica de programação e o pensamento crítico.
 
-<h2 id="tecnologias"> 🛠 Tecnologias </h2>
+<h2 id="tecnologias"> Tecnologias 🛠 </h2>
 
 <details>
   <summary> Gerais </summary>
     <ul> 
       <li><a href="https://eslint.org/"> ESLint </a></li>
-<!--       <li><a href="https://www.docker.com/"> Docker </a></li> -->
+      <li><a href="https://www.docker.com/"> Docker </a></li>
       <li><a href="https://www.typescriptlang.org/"> TypeScript </a></li>
     </ul>
 </details>
@@ -48,8 +49,12 @@ O maior desafio desse projeto ocorreu durante a manipulação de dados. Tanto no
     </ul>
 </details>
 
-<h2 id="feedback"> :black_nib: Feedback</h2>
-<p> Esse foi um desafio que envolveu bastante aprendizado. Pude revisitar alguns conceitos que estavam meio "enferrujados" e também usar novas ferramentas. Apesar de não ter requerido uma alta complexidade, é um projeto que ainda tem o seu caráter desafiador. Achei o prazo suficiente para cumprir com todos os requisitos.</p>
+<h2 id="melhorias"> Melhorias :wrench: </h2>
+O projeto apresenta todos os requisitos pedidos no documento, mas ainda é passível de melhorias. Foram criados os arquivos dockerfile do frontend e do backend, e o docker-compose da aplicação, mas ainda não foi feito um deploy. Também é possível incrementar os testes na aplicação como um todo, e criar middlewares de tratamento de erro no backend.
+
+<h2 id="feedback"> Feedback :black_nib: </h2>
+<p> Esse foi um desafio que me proporcionou bastante aprendizado. Pude revisitar alguns conceitos que estavam meio "enferrujados" e também usar novas ferramentas. Apesar de não ter requerido uma alta complexidade, é um projeto que ainda tem o seu caráter desafiador. Achei o prazo suficiente para cumprir com todos os requisitos.</p>
+
 
 <details>
   <summary> Possível erro no documento</summary>
